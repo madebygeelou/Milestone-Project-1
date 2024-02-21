@@ -4,7 +4,7 @@
     margin-top: 20vh;
 }
 
-.button1 {
+#button1 {
     display: inline-block;
     padding: 50px 50px;
     background-color: #4CAF50; 
@@ -17,10 +17,10 @@
     cursor: pointer;
 }
 
-.button1:hover {
+.button1-clicked {
     background-color: #45a049; 
 }
-.button2 {
+#button2 {
     display: inline-block;
     padding: 50px 50px;
     background-color: red; 
@@ -37,7 +37,7 @@
     background-color: rgb(178, 5, 5); 
 }
 
-.button3 {
+#button3 {
     display: inline-block;
     padding: 50px 50px;
     background-color: yellow; 
@@ -54,7 +54,7 @@
 .button3:hover {
     background-color: #d6cb00; 
 }
-.button4 {
+#button4 {
     display: inline-block;
     padding: 50px 50px;
     background-color: blue; 
