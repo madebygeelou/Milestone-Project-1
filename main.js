@@ -18,14 +18,16 @@
 // }); 
 
 function clickGreen() {
-    var sound = document.getElementById('audio1');
+    var sound = new Audio('158914__carlmartin__cajun-kick-hit-19.wav');
     sound.play();
-
-//         setTimeout(function() {
-//             button.classList.remove("button1-clicked");
-//         }, 1000); // Change 1000 to the desired duration in milliseconds
-// }
+    debugger
+    let button = document.getElementById('button1');
+    button.classList.add("green-clicked");
+        setTimeout(function() {
+            button.classList.remove("green-clicked");
+        }, 1000); // Change 1000 to the desired duration in milliseconds
 }
+
 document.addEventListener("keydown", e => {
  e.preventDefault();
  if (
@@ -39,10 +41,9 @@ document.addEventListener("keydown", e => {
     var sound = document.getElementById('audio2');
     sound.play();
 
-//         setTimeout(function() {
-//             button.classList.remove("button1-clicked");
-//         }, 1000); // Change 1000 to the desired duration in milliseconds
-// }
+        setTimeout(function() {
+            button.classList.remove("button1-clicked");
+        }, 1000); // Change 1000 to the desired duration in milliseconds
 }
 document.addEventListener("keydown", e => {
  e.preventDefault();
@@ -70,7 +71,7 @@ document.addEventListener("keydown", e => {
    clickYellow();
  }
  });
- 
+
  function clickBlue() {
     var sound = document.getElementById('audio4');
     sound.play();
