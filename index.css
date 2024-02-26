@@ -30,8 +30,29 @@
     background-color: #4CAF50; 
 }
 
-.green-clicked {
-    background-color: #117311; 
+.green-clicked  {
+    background-color:#117311;
+    box-shadow: 10px 10px 8px #888888; 
+    transform: translateY(1px);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 5s infinite;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(.75);
+		box-shadow: 10 10 8 0px #117311;;
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 10 10 8 0px #117311;;
+	}
+
+	100% {
+		transform: scale(.75);
+		box-shadow: 10 10 8 0px #117311;;
+	}
 }
 
 .red{
@@ -40,7 +61,28 @@
 
 .red-clicked{
   background-color:rgb(178, 5, 5);
+  transform: translateY(1px);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+  animation: pulse 5s infinite;
 }
+@keyframes pulse {
+  0% {
+      transform: scale(.75);
+      box-shadow: 10 10 8 0px #117311;;
+  }
+
+  70% {
+      transform: scale(1);
+      box-shadow: 10 10 8 0px #117311;;
+  }
+
+  100% {
+      transform: scale(.75);
+      box-shadow: 10 10 8 0px #117311;;
+  }
+}
+
 
 .yellow{
     background-color: yellow; 
@@ -48,6 +90,26 @@
 
 .yellow-clicked{
     background-color: #d6cb00; 
+    transform: translateY(1px);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 5s infinite;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(.75);
+		box-shadow: 10 10 8 0px #117311;;
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 10 10 8 0px #117311;;
+	}
+
+	100% {
+		transform: scale(.75);
+		box-shadow: 10 10 8 0px #117311;;
+	}
 }
 
 .blue{
@@ -56,6 +118,26 @@
 
 .blue-clicked{
     background-color: #0019d3; 
+    transform: translateY(1px);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 5s infinite;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(.75);
+		box-shadow: 10 10 8 0px #117311;;
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 10 10 8 0px #117311;;
+	}
+
+	100% {
+		transform: scale(.75);
+		box-shadow: 10 10 8 0px #117311;;
+	}
 }
 
 
