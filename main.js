@@ -1,31 +1,16 @@
-// var x = document.getElementById("audio1");
 
-// function playAudio() {
-//   x.play();
-// }
+function greenGradient(){
 
-// function pauseAudio() {
-//   x.pause();
-// }
-
-// var input = document.getElementById("button1");
-
-// input.addEventListener("keypress", function(event) {
-//  if (event.key === "W") {
-//    event.preventDefault();
-//    document.getElementById("myBtn").click();
-//  }
-// }); 
-
+}
 function clickGreen() {
     var sound = new Audio('158914__carlmartin__cajun-kick-hit-19.wav');
     sound.play();
-    document.body.style.backgroundColor="#6886ff";
+    document.body.style.color="blue";
     let button = document.getElementById('button1');
     button.classList.add("green-clicked");
         setTimeout(function() {
             button.classList.remove("green-clicked");
-        }, 100); // Change 1000 to the desired duration in milliseconds
+        }, 100); 
 }
 
 document.addEventListener("keydown", e => {
@@ -34,9 +19,12 @@ document.addEventListener("keydown", e => {
     e.key.toLowerCase() === "w"
  ){
    clickGreen();
+   greenGradient();
  }
  });
+ function redGradient(){
 
+ }
  function clickRed() {
     var sound = new Audio('678742__cloud-10__martin-garrix-animals-drop-pluck-original.wav');
     sound.play();
@@ -56,6 +44,9 @@ document.addEventListener("keydown", e => {
  }
  });
 
+ function yellowGradient(){
+
+ }
  function clickYellow() {
     var sound = new Audio('680995__cloud-10__m1-classic-organ.wav');
     sound.play();
@@ -75,6 +66,9 @@ document.addEventListener("keydown", e => {
  }
  });
 
+ function blueGradient(){
+
+ }
  function clickBlue() {
     var sound = new Audio('563387__badoink__woop.wav');
     sound.play();
@@ -93,19 +87,5 @@ document.addEventListener("keydown", e => {
    clickBlue();
  }
  });
-// document.addEventListener("DOMContentLoaded", function() {
-//     var input = document.getElementById("button1");
-// debugger
-//     input.addEventListener("keypress", function(event) {
-//         if (event.key === "W") {
-//             event.preventDefault();
-//             clickGreen(); 
-//         }
-//     });
 
-//     function clickGreen() {
-//         var sound = document.getElementById('audio1');
-//         sound.play();
-//     }
-// });
 
