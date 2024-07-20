@@ -1,0 +1,9 @@
+// functions.scss
+@function shade-color($color, $percent) {
+    @return mix(black, $color, $percent);
+  }
+  
+  @function gradient($colors...) {
+    @return linear-gradient($colors...);
+  }
+  

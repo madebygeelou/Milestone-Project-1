@@ -1,0 +1,15 @@
+// variables.scss
+$border-color: black;
+$max-height: 20vh;
+$margin-top: 20vh;
+$button-padding: 50px;
+$button-border-radius: 4px;
+$button-font-size: 16px;
+$button-margin-top: 50vh;
+$primary-color: #4CAF50;
+$primary-background: #f1f7eb;
+$green-gradient: linear-gradient(90deg, #2c793d, #2ab641, $primary-background, #23d5ab);
+$red-gradient: linear-gradient(-100deg, #b73232, #fa9e52, $primary-background, #ff8cf7);
+$blue-gradient: linear-gradient(145deg, #370b5b, #333cbf, #dcfbff, #20a2ff);
+$yellow-gradient: linear-gradient(-145deg, #ffbd06, #ffe047, $primary-background, #a9c700b3);
+$clicked-box-shadow: 10px 10px 8px #888888;

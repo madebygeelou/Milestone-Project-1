@@ -1,0 +1,98 @@
+// style.scss
+@import 'variables';
+@import 'mixins';
+@import 'functions';
+
+.instructions {
+  text-align: right;
+}
+
+.a {
+  border: 1px solid $border-color;
+  max-height: $max-height;
+  margin-top: $margin-top;
+}
+
+.buttons {
+  @include button-style($primary-color);
+  margin-top: $button-margin-top;
+}
+
+.buttonscontainer {
+  text-align: center;
+}
+
+.green {
+  background-color: $primary-color;
+}
+
+.green-gradient {
+  @include gradient-background($green-gradient);
+}
+
+.red-gradient {
+  @include gradient-background($red-gradient);
+}
+
+.blue-gradient {
+  @include gradient-background($blue-gradient);
+}
+
+.yellow-gradient {
+  @include gradient-background($yellow-gradient);
+}
+
+.green-clicked {
+  @include clicked-style(#117311);
+}
+
+.red {
+  background-color: red;
+}
+
+.red-clicked {
+  @include clicked-style(rgb(178, 5, 5));
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.yellow-clicked {
+  @include clicked-style(#d6cb00);
+}
+
+.blue {
+  background-color: blue;
+}
+
+.blue-clicked {
+  @include clicked-style(#0019d3);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(.75);
+    box-shadow: $clicked-box-shadow;
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: $clicked-box-shadow;
+  }
+  100% {
+    transform: scale(.75);
+    box-shadow: $clicked-box-shadow;
+  }
+}

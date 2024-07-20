@@ -1,0 +1,127 @@
+.instructions {
+  text-align: right;
+}
+
+.a {
+  border: 1px solid black;
+  max-height: 20vh;
+  margin-top: 20vh;
+}
+
+.buttons {
+  display: inline-block;
+  padding: 50px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  margin-top: 50vh;
+}
+
+.buttonscontainer {
+  text-align: center;
+}
+
+.green {
+  background-color: #4CAF50;
+}
+
+.green-gradient {
+  background: linear-gradient(90deg, #2c793d, #2ab641, #f1f7eb, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  height: 100vh;
+}
+
+.red-gradient {
+  background: linear-gradient(-100deg, #b73232, #fa9e52, #f1f7eb, #ff8cf7);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  height: 100vh;
+}
+
+.blue-gradient {
+  background: linear-gradient(145deg, #370b5b, #333cbf, #dcfbff, #20a2ff);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  height: 100vh;
+}
+
+.yellow-gradient {
+  background: linear-gradient(-145deg, #ffbd06, #ffe047, #f1f7eb, rgba(169, 199, 0, 0.7019607843));
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  height: 100vh;
+}
+
+.green-clicked {
+  background-color: #117311;
+  box-shadow: 10px 10px 8px #888888;
+  transform: translateY(1px);
+  animation: pulse 5s infinite;
+}
+
+.red {
+  background-color: red;
+}
+
+.red-clicked {
+  background-color: rgb(178, 5, 5);
+  box-shadow: 10px 10px 8px #888888;
+  transform: translateY(1px);
+  animation: pulse 5s infinite;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.yellow-clicked {
+  background-color: #d6cb00;
+  box-shadow: 10px 10px 8px #888888;
+  transform: translateY(1px);
+  animation: pulse 5s infinite;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.blue-clicked {
+  background-color: #0019d3;
+  box-shadow: 10px 10px 8px #888888;
+  transform: translateY(1px);
+  animation: pulse 5s infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.75);
+    box-shadow: 10px 10px 8px #888888;
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 10px 10px 8px #888888;
+  }
+  100% {
+    transform: scale(0.75);
+    box-shadow: 10px 10px 8px #888888;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+// mixins.scss
+@mixin gradient-background($gradient) {
+    background: $gradient;
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    height: 100vh;
+  }
+  
+  @mixin button-style($bg-color) {
+    display: inline-block;
+    padding: $button-padding;
+    border: none;
+    border-radius: $button-border-radius;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: $button-font-size;
+    cursor: pointer;
+    background-color: $bg-color;
+  }
+  
+  @mixin clicked-style($bg-color) {
+    background-color: $bg-color;
+    box-shadow: $clicked-box-shadow;
+    transform: translateY(1px);
+    animation: pulse 5s infinite;
+  }
+  
